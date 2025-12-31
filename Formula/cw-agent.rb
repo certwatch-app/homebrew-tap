@@ -5,21 +5,21 @@
 class CwAgent < Formula
   desc "SSL/TLS certificate monitoring agent for CertWatch"
   homepage "https://certwatch.app"
-  version "0.4.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.0/cw-agent_0.4.0_darwin_amd64.tar.gz"
-      sha256 "0eaf24fd67adec0774812e11ef8345e1c02af116cb6c7095e61dccca60c8ac13"
+      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.1/cw-agent_0.4.1_darwin_amd64.tar.gz"
+      sha256 "c16be70ea70b539f555fa2ceb18f3bc960582950535d4cb67d6a83e310ec7ba2"
 
       def install
         bin.install "cw-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.0/cw-agent_0.4.0_darwin_arm64.tar.gz"
-      sha256 "44f1807b28330163c1ca7a6015529128a4fa92500e3cdeec449b090e32b9735d"
+      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.1/cw-agent_0.4.1_darwin_arm64.tar.gz"
+      sha256 "8ca665d6645f32bf55640ffbd67244eac92306249087e2794c91ae609d186ead"
 
       def install
         bin.install "cw-agent"
@@ -29,15 +29,15 @@ class CwAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.0/cw-agent_0.4.0_linux_amd64.tar.gz"
-      sha256 "6a9a03eaec77f088e93beb8791f3391952748384264c27972db54d071818de05"
+      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.1/cw-agent_0.4.1_linux_amd64.tar.gz"
+      sha256 "20f6bc95ffd10f87d8d512ca0714085ab501c8b9e80903a3361c14729e0359e7"
       def install
         bin.install "cw-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.0/cw-agent_0.4.0_linux_arm64.tar.gz"
-      sha256 "e73217cfbbb2faed79742345fb3ce29d1c827fbb8d08552f1496c256ede54833"
+      url "https://github.com/certwatch-app/cw-agent/releases/download/v0.4.1/cw-agent_0.4.1_linux_arm64.tar.gz"
+      sha256 "01fc2cc1673626cced071eefd3d53f90ffa4b012b21d6098f3cc7e3c9803f6d5"
       def install
         bin.install "cw-agent"
       end
