@@ -5,21 +5,21 @@
 class CertwatchWebhookCli < Formula
   desc "Deliver real CT certificate webhook payloads to your local endpoint"
   homepage "https://certwatch.app"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.0/certwatch-webhook-cli_darwin_amd64.tar.gz"
-      sha256 "e304beb0c74c9a245c7d9cf102b5d6a31de1ac8b739563447f8566e0796db1cd"
+      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.1/certwatch-webhook-cli_darwin_amd64.tar.gz"
+      sha256 "ce318c41927561a6568c45620c5477a88addd193f648592431bbf9c56c7b8c32"
 
       def install
         bin.install "certwatch-webhook-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.0/certwatch-webhook-cli_darwin_arm64.tar.gz"
-      sha256 "78adc6343afb2bac521bb36362b860e8434882ebd59b9e263dbe0b44a9c57c2d"
+      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.1/certwatch-webhook-cli_darwin_arm64.tar.gz"
+      sha256 "b82cca57b4415c8fd63834a6a3dee916b9f4abd1d5de1c5fe0d9827bc3effce2"
 
       def install
         bin.install "certwatch-webhook-cli"
@@ -29,15 +29,15 @@ class CertwatchWebhookCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.0/certwatch-webhook-cli_linux_amd64.tar.gz"
-      sha256 "3f8af749daf18879fa095620ddd9550243fc61c6611d3f91c4f885cfdd10fc55"
+      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.1/certwatch-webhook-cli_linux_amd64.tar.gz"
+      sha256 "c471828cb543299418c12aef79a4548e6666411514cc6a6493e54c929e5230d4"
       def install
         bin.install "certwatch-webhook-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.0/certwatch-webhook-cli_linux_arm64.tar.gz"
-      sha256 "5d9774c79f733295f23ef22b51ea15e60de81a91be576bcb540a9c3894d322fe"
+      url "https://github.com/certwatch-app/certwatch-webhook-cli/releases/download/v1.0.1/certwatch-webhook-cli_linux_arm64.tar.gz"
+      sha256 "0af2f19bf90d7b27d24cf3143e22b74bbb5cac5694ee804444158ea28f424bc8"
       def install
         bin.install "certwatch-webhook-cli"
       end
